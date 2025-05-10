@@ -3,12 +3,14 @@ package login.com.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import jakarta.validation.Valid;
 import login.com.dto.UserDTO;
 import login.com.dto.UserRequestDTO;
 import login.com.services.UserService;
@@ -27,7 +29,7 @@ public class UserController {
 	}
 	
 	@PostMapping
-	public void saveUser(@RequestBody UserRequestDTO saveUser) {
+	public void saveUser(@RequestBody @Valid UserRequestDTO saveUser) {
 		userService.saveUser(saveUser);
 		
 	}
