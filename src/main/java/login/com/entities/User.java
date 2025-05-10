@@ -8,15 +8,15 @@ public class User {
 	
 	@Id
 	private String email;
-	private String passaword;
+	private String password;
 	
 	public User() {
 		
 	}
 
-	public User(String email, String passaword) {
+	public User(String email, String password) {
 		this.email = email;
-		this.passaword = passaword;
+		this.password = password;
 	}
 
 	public String getEmail() {
@@ -27,12 +27,12 @@ public class User {
 		this.email = email;
 	}
 
-	public String getPassaword() {
-		return passaword;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPassaword(String passaword) {
-		this.passaword = passaword;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 	
