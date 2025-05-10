@@ -1,0 +1,22 @@
+<main class = "main-container">
+    <div class="container">
+    
+      
+        <h1 class="h1">Login</h1>
+        <div class = "login-form">
+            <div class="form-input">
+                <input class="input_style" type="email" name="email" id="" required>
+                <label for="email" class="label_input">E-mail</label>
+            </div>
+            <br>
+            <div class="form-input">
+                <input class="input_style" type="password" id="passaword" name="passaword" required>
+                <label for="passaword" class="label_input">Senha</label>                     
+            </div>
+            <input type="checkbox" id="togglePassword" onclick="togglePasswordVisibility()">Mostra senha
+        </div>
+        <input type="submit" name="submit" id = "submit" value="Entrar">
+    </div>
+</main>
+
+<router-outlet />

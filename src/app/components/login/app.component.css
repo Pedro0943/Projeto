@@ -1,0 +1,80 @@
+/* Container principal que centraliza todo o conteúdo na tela */
+.main-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container interno com layout em grid e aparência arredondada */
+.container {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 350px;
+    background-color: #f8f79fb9; /* Cor de fundo com transparência */
+    border-radius: 20px;
+}
+
+/* Formulário de login com largura e altura fixas e cor de texto */
+.login-form {
+    height: 150px;
+    width: 260px;
+    color: #000039; /* Azul escuro */
+}
+
+/* Estilização dos inputs (margem e posicionamento relativo para o label flutuante) */
+.form-input {
+    margin: 10px;
+    position: relative;
+}
+
+/* Estilização da borda inferior do input, sem fundo nem borda lateral */
+.input_style {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000039;
+    outline: none;
+    color: #000039;
+    font-size: 0.9em;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+/* Label posicionado sobre o input, usado para efeito flutuante */
+.label_input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #000039;
+    pointer-events: none; /* Permite clicar no input mesmo sobre o label */
+    transition: 0.5s; /* Suaviza o movimento do label */
+}
+
+/* Quando o input está focado ou válido, move o label para cima */
+.input_style:focus ~ .label_input,
+.input_style:valid ~ .label_input {
+    top: -20px;
+    font-size: 13px;
+}
+
+/* Estilo do botão de envio */
+#submit {
+    background-color: #3e3e53;
+    border: solid 1px;
+    border-radius: 8px;
+    border-color: #3e3e53;
+    color: #bab986;
+    font-size: 0.9em;
+    margin-bottom: 40px;
+    width: 200px;
+    height: 35px;
+}
+
+/* Estilo do botão ao passar o mouse */
+#submit:hover {
+    background-color: #000039;
+    border-color: #000039;
+    color: #f8f69f;
+}
