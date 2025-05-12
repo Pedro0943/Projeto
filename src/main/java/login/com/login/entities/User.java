@@ -1,9 +1,9 @@
-package login.com.entities;
+package login.com.login.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import login.com.dto.UserRequestDTO;
+import login.com.login.dto.UserRequestDTO;
 
 @Entity
 @Table(name = "tb_users")

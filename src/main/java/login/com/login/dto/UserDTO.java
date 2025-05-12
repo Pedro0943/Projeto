@@ -1,7 +1,7 @@
-package login.com.dto;
+package login.com.login.dto;
 
 
-import login.com.entities.User;
+import login.com.login.entities.User;
 
 public class UserDTO {
 	

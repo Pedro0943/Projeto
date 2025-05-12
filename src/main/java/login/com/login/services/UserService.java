@@ -1,4 +1,4 @@
-package login.com.services;
+package login.com.login.services;
 
 import java.util.List;
 
@@ -6,10 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import login.com.dto.UserDTO;
-import login.com.dto.UserRequestDTO;
-import login.com.entities.User;
-import login.com.repositories.UserRepository;
+import login.com.login.dto.UserDTO;
+import login.com.login.dto.UserRequestDTO;
+import login.com.login.entities.User;
+import login.com.login.repositories.UserRepository;
 
 @Service
 public class UserService {

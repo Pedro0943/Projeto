@@ -1,4 +1,4 @@
-package login.com.controllers;
+package login.com.login.controllers;
 
 import java.util.List;
 
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import jakarta.validation.Valid;
-import login.com.dto.UserDTO;
-import login.com.dto.UserRequestDTO;
-import login.com.services.UserService;
+import login.com.login.dto.UserDTO;
+import login.com.login.dto.UserRequestDTO;
+import login.com.login.services.UserService;
 
 @RestController
 @RequestMapping(value = "/register")
